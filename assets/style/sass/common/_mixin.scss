@@ -1,0 +1,80 @@
+// position
+@mixin position_background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin position_center{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+@mixin position_relative{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+// etc
+@mixin initialization{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+@mixin blind{
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+
+
+// responsive PC First
+@mixin under_1024{
+    @media screen and (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin under_768{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin under_480{
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}
+
+
+
+// responsive MOBILE First
+@mixin over_480{
+    @media screen and (min-width: 480px){
+        @content;
+    }
+}
+
+@mixin over_768{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin over_1024{
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+
+
+
