@@ -1,2 +1,3 @@
-Publishing Sass
-  - Sass를 사용하는 퍼블리싱 초기 세팅
+Publishing Sass Init
+  - Publishing Sass Init 초기 세팅
+    1. https://velog.io/@rhesus2016/SASS 참고
